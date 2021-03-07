@@ -46,7 +46,7 @@ void VrmView::initialize()
 {
     int LONSIZE = BRES+2;
     int LATSIZE = BRES+2;
-    int HSIZE   = HRES+2-LONSIZE;
+    int HSIZE   = HRES-6-LONSIZE;
     int VSIZE   = VRES+2;
     double slon = SclLon*ZoomScl;
     double slat = SclLat*ZoomScl;
