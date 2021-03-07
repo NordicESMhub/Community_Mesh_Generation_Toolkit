@@ -44,10 +44,10 @@ VrmView::VrmView(int I_HRES, int I_VRES, QWidget *parent) : QGraphicsView(parent
 
 void VrmView::initialize()
 {
-    int HSIZE   = HRES+2;
-    int VSIZE   = VRES+2;
     int LONSIZE = BRES+2;
     int LATSIZE = BRES+2;
+    int HSIZE   = HRES+2-LONSIZE;
+    int VSIZE   = VRES+2;
     double slon = SclLon*ZoomScl;
     double slat = SclLat*ZoomScl;
     emit setViewWindows(HSIZE,  VSIZE,  LATSIZE, LONSIZE, Lon0, Lat0, slon, slat);
